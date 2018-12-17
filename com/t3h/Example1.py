@@ -9,7 +9,6 @@ int_list = []
 for i in range(10):
     number = int(input("Enter a number: \n"))
     int_list.insert(i, number)
-    i += 1
 
 print("Init list: ")
 print(int_list)
@@ -34,7 +33,6 @@ def find_max_value_in_array(list):
     for i in range(len(list)):
         if max_e <= list[i]:
             max_e = list[i]
-        i += 1
     return max_e
 
 
@@ -55,7 +53,6 @@ def find_min_value_in_array(list):
     for i in range(len(list)):
         if min_e >= list[i]:
             min_e = list[i]
-        i += 1
     return min_e
 
 
@@ -70,7 +67,6 @@ def median_list(list):
     for i in range(len(list)):
         sum_list += list[i]
         median_element = sum_list / len(list)
-        i += 1
     return median_element
 
 
@@ -85,7 +81,6 @@ def find_odd_number_list(list):
     for i in range(len(list)):
         if list[i] % 2 != 0:
             odd_number_list.append(list[i])
-        i += 1
     return odd_number_list
 
 
